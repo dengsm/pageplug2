@@ -8,7 +8,7 @@
     "onPageChange": "{{pageHandler.onPageNoOrPageSizeChange();}}",
     "type": "TABLE_WIDGET_V2",
     "inlineEditingSaveOption": "ROW_LEVEL",
-    "animateLoading": "{{log_select.isLoading}}",
+    "animateLoading": true,
     "dynamicBindingPathList": [
         {"key": "accentColor"},
         {"key": "borderRadius"},
@@ -31,8 +31,7 @@
         {"key": "primaryColumns.error_msg.computedValue"},
         {"key": "primaryColumns.proccess_name.computedValue"},
         {"key": "totalRecordsCount"},
-        {"key": "primaryColumns.job_result.textColor"},
-        {"key": "animateLoading"}
+        {"key": "primaryColumns.job_result.textColor"}
     ],
     "needsHeightForContent": true,
     "leftColumn": 0,
@@ -97,8 +96,7 @@
     ],
     "dynamicPropertyPathList": [
         {"key": "primaryColumns.job_result.textColor"},
-        {"key": "isSortable"},
-        {"key": "animateLoading"}
+        {"key": "isSortable"}
     ],
     "displayName": "表格",
     "searchTags": [
