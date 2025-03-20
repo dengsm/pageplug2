@@ -8,7 +8,7 @@
     "onPageChange": "{{pageHandler.onPageNoOrPageSizeChange_config();}}",
     "type": "TABLE_WIDGET_V2",
     "inlineEditingSaveOption": "ROW_LEVEL",
-    "animateLoading": false,
+    "animateLoading": "{{config_select.isLoading}}",
     "dynamicBindingPathList": [
         {"key": "accentColor"},
         {"key": "borderRadius"},
@@ -26,7 +26,8 @@
         {"key": "primaryColumns.write_dbname.computedValue"},
         {"key": "totalRecordsCount"},
         {"key": "primaryColumns.job_status.textColor"},
-        {"key": "defaultSearchText"}
+        {"key": "defaultSearchText"},
+        {"key": "animateLoading"}
     ],
     "needsHeightForContent": true,
     "leftColumn": 0,
@@ -81,7 +82,10 @@
         "read_dbname",
         "write_dbname"
     ],
-    "dynamicPropertyPathList": [{"key": "primaryColumns.job_status.textColor"}],
+    "dynamicPropertyPathList": [
+        {"key": "primaryColumns.job_status.textColor"},
+        {"key": "animateLoading"}
+    ],
     "displayName": "表格",
     "searchTags": [
         "datagrid",

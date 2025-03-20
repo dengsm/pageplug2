@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1000,
+          "bottomRow": 970,
           "containerStyle": "none",
           "snapRows": 125,
           "parentRowSpace": 1,
@@ -96,17 +96,20 @@
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [
-                " (Table1.pageNo - 1) * Table1.pageSize ",
-                " Table1.pageSize "
+                "global.store.searchtxt"
               ],
               "timeoutInMillisecond": 10000
-            },
+            }
+          ],
+          [
             {
               "id": "NIFI Flow Overview_log_total",
               "name": "log_total",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
-              "jsonPathKeys": [],
+              "jsonPathKeys": [
+                "global.store.searchtxt"
+              ],
               "timeoutInMillisecond": 10000
             }
           ]

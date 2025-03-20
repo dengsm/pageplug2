@@ -8,7 +8,7 @@
     "onPageChange": "{{pageHandler.onPageNoOrPageSizeChange();}}",
     "type": "TABLE_WIDGET_V2",
     "inlineEditingSaveOption": "ROW_LEVEL",
-    "animateLoading": false,
+    "animateLoading": "{{log_select.isLoading}}",
     "dynamicBindingPathList": [
         {"key": "accentColor"},
         {"key": "borderRadius"},
@@ -31,8 +31,8 @@
         {"key": "primaryColumns.error_msg.computedValue"},
         {"key": "primaryColumns.proccess_name.computedValue"},
         {"key": "totalRecordsCount"},
-        {"key": "defaultSearchText"},
-        {"key": "primaryColumns.job_result.textColor"}
+        {"key": "primaryColumns.job_result.textColor"},
+        {"key": "animateLoading"}
     ],
     "needsHeightForContent": true,
     "leftColumn": 0,
@@ -46,6 +46,7 @@
     "totalRecordsCount": "{{log_total.data[0].cnt}}",
     "tags": ["数据展示类"],
     "isLoading": false,
+    "onSearchTextChanged": "{{pageHandler.faillog_search();}}",
     "childStylesheet": {
         "button": {
             "boxShadow": "none",
@@ -96,7 +97,8 @@
     ],
     "dynamicPropertyPathList": [
         {"key": "primaryColumns.job_result.textColor"},
-        {"key": "isSortable"}
+        {"key": "isSortable"},
+        {"key": "animateLoading"}
     ],
     "displayName": "表格",
     "searchTags": [
@@ -125,7 +127,8 @@
     "parentColumnSpace": 21.31298828125,
     "dynamicTriggerPathList": [
         {"key": "onPageChange"},
-        {"key": "onPageSizeChange"}
+        {"key": "onPageSizeChange"},
+        {"key": "onSearchTextChanged"}
     ],
     "borderWidth": "1",
     "primaryColumns": {
@@ -565,7 +568,7 @@
             "verticalAlignment": "CENTER"
         }
     },
-    "defaultSearchText": "{{global.store.searchtxt}}",
+    "defaultSearchText": "",
     "key": "rr3on7m320",
     "canFreezeColumn": true,
     "isDeprecated": false,
@@ -577,7 +580,7 @@
     "label": "数据",
     "searchKey": "",
     "parentId": "1u6ndkgmgj",
-    "serverSidePaginationEnabled": true,
+    "serverSidePaginationEnabled": false,
     "renderMode": "CANVAS",
     "mobileTopRow": 1,
     "horizontalAlignment": "CENTER",
