@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "UPDATE gas_station SET\n\t\tname = '{{update_form.fieldState.name.isVisible ? update_form.formData.name : update_form.sourceData.name}}',\n\t\taddress = '{{update_form.fieldState.address.isVisible ? update_form.formData.address : update_form.sourceData.address}}',\n    longitude = '{{update_form.fieldState.longitude.isVisible ? update_form.formData.longitude : update_form.sourceData.longitude}}',\n\t\tlatitude = '{{update_form.fieldState.latitude.isVisible ? update_form.formData.latitude : update_form.sourceData.latitude}}',\n\t\tarea_id = '{{update_form.fieldState.area_id.isVisible ? update_form.formData.area_id : update_form.sourceData.area_id}}',\n\t\tbusiness_start_time = '{{update_form.fieldState.business_start_time.isVisible ? update_form.formData.business_start_time : update_form.sourceData.business_start_time}}',\n\t\tbusiness_end_time = '{{update_form.fieldState.business_end_time.isVisible ? update_form.formData.business_end_time : update_form.sourceData.business_end_time}}',\n\t\tstation_type = '{{update_form.fieldState.station_type.isVisible ? update_form.formData.station_type : update_form.sourceData.station_type}}',\n\t\tcar_wash = '{{update_form.fieldState.car_wash.isVisible ? update_form.formData.car_wash : update_form.sourceData.car_wash}}',\n\t\tcreate_dept = '{{update_form.fieldState.create_dept.isVisible ? update_form.formData.create_dept : update_form.sourceData.create_dept}}',\n\t\tcreate_by = '{{update_form.fieldState.create_by.isVisible ? update_form.formData.create_by : update_form.sourceData.create_by}}'\n  WHERE station_id = {{data_table.selectedRow.station_id}};",
+      "body": "UPDATE gas_station SET\n\t\tname = '{{update_form.fieldState.name.isVisible ? update_form.formData.name : update_form.sourceData.name}}',\n\t\taddress = '{{update_form.fieldState.address.isVisible ? update_form.formData.address : update_form.sourceData.address}}',\n    longitude = '{{update_form.fieldState.longitude.isVisible ? update_form.formData.longitude : update_form.sourceData.longitude}}',\n\t\tlatitude = '{{update_form.fieldState.latitude.isVisible ? update_form.formData.latitude : update_form.sourceData.latitude}}',\n\t\tarea_id = '{{update_form.fieldState.area_id.isVisible ? update_form.formData.area_id : update_form.sourceData.area_id}}',\n\t\tbusiness_start_time = '{{update_form.fieldState.business_start_time.isVisible ? update_form.formData.business_start_time : update_form.sourceData.business_start_time}}',\n\t\tbusiness_end_time = '{{update_form.fieldState.business_end_time.isVisible ? update_form.formData.business_end_time : update_form.sourceData.business_end_time}}',\n\t\tstation_type = '{{update_form.fieldState.station_type.isVisible ? update_form.formData.station_type : update_form.sourceData.station_type}}',\n\t\tcar_wash = '{{update_form.fieldState.car_wash.isVisible ? update_form.formData.car_wash : update_form.sourceData.car_wash}}',\n\t\tcreate_dept = '{{update_form.fieldState.create_dept.isVisible ? update_form.formData.create_dept : update_form.sourceData.create_dept}}',\n\t\tcreate_by = '{{update_form.fieldState.create_by.isVisible ? update_form.formData.create_by : update_form.sourceData.create_by}}',\n\t\tstation_id= '{{update_form.fieldState.station_id.isVisible ? update_form.formData.station_id : update_form.sourceData.station_id}}',\n  WHERE station_id = {{data_table.selectedRow.station_id}};",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -27,6 +27,11 @@
       ]
     },
     "executeOnLoad": false,
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      }
+    ],
     "isValid": true,
     "invalids": [],
     "messages": [],
@@ -42,6 +47,7 @@
       "update_form.fieldState.latitude.isVisible ? update_form.formData.latitude : update_form.sourceData.latitude",
       "update_form.fieldState.longitude.isVisible ? update_form.formData.longitude : update_form.sourceData.longitude",
       "update_form.fieldState.name.isVisible ? update_form.formData.name : update_form.sourceData.name",
+      "update_form.fieldState.station_id.isVisible ? update_form.formData.station_id : update_form.sourceData.station_id",
       "update_form.fieldState.station_type.isVisible ? update_form.formData.station_type : update_form.sourceData.station_type"
     ],
     "userSetOnLoad": false,

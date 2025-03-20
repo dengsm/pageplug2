@@ -9,5 +9,6 @@ UPDATE gas_station SET
 		station_type = '{{update_form.fieldState.station_type.isVisible ? update_form.formData.station_type : update_form.sourceData.station_type}}',
 		car_wash = '{{update_form.fieldState.car_wash.isVisible ? update_form.formData.car_wash : update_form.sourceData.car_wash}}',
 		create_dept = '{{update_form.fieldState.create_dept.isVisible ? update_form.formData.create_dept : update_form.sourceData.create_dept}}',
-		create_by = '{{update_form.fieldState.create_by.isVisible ? update_form.formData.create_by : update_form.sourceData.create_by}}'
+		create_by = '{{update_form.fieldState.create_by.isVisible ? update_form.formData.create_by : update_form.sourceData.create_by}}',
+		station_id= '{{update_form.fieldState.station_id.isVisible ? update_form.formData.station_id : update_form.sourceData.station_id}}',
   WHERE station_id = {{data_table.selectedRow.station_id}};

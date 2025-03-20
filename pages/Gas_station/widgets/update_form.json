@@ -32,7 +32,7 @@
                 "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
                 "children": {},
                 "options": "{{\n  (tenant_dic.data || []).map(item => ({\n   value: item.value,\n\t  label: item.label\n  }))\n}}",
-                "position": 1,
+                "position": 2,
                 "isDisabled": false,
                 "sourceData": "000000",
                 "fieldType": "Select"
@@ -54,7 +54,7 @@
                 "children": {},
                 "isSpellCheck": false,
                 "iconAlign": "left",
-                "position": 9,
+                "position": 10,
                 "isDisabled": false,
                 "sourceData": "1",
                 "fieldType": "Text Input"
@@ -76,7 +76,7 @@
                 "children": {},
                 "isSpellCheck": false,
                 "iconAlign": "left",
-                "position": 15,
+                "position": 16,
                 "isDisabled": false,
                 "sourceData": "0",
                 "fieldType": "Text Input"
@@ -98,7 +98,7 @@
                 "children": {},
                 "isSpellCheck": false,
                 "iconAlign": "left",
-                "position": 2,
+                "position": 3,
                 "isDisabled": false,
                 "sourceData": "广东省韶关市浈江区新韶镇大学路27号",
                 "fieldType": "Text Input"
@@ -120,9 +120,31 @@
                 "children": {},
                 "isSpellCheck": false,
                 "iconAlign": "left",
-                "position": 12,
+                "position": 13,
                 "isDisabled": false,
                 "sourceData": "2024-07-22T10:00:00Z",
+                "fieldType": "Text Input"
+            },
+            "customField1": {
+                "labelTextSize": "0.875rem",
+                "identifier": "customField1",
+                "boxShadow": "none",
+                "isRequired": false,
+                "isCustomField": true,
+                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.station_id))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+                "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+                "dataType": "string",
+                "accessor": "station_id",
+                "isVisible": true,
+                "label": "Station_id",
+                "originalIdentifier": "customField1",
+                "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+                "children": {},
+                "isSpellCheck": false,
+                "iconAlign": "left",
+                "position": 0,
+                "isDisabled": false,
+                "sourceData": "",
                 "fieldType": "Text Input"
             },
             "business_end_time": {
@@ -142,7 +164,7 @@
                 "children": {},
                 "isSpellCheck": false,
                 "iconAlign": "left",
-                "position": 7,
+                "position": 8,
                 "isDisabled": false,
                 "sourceData": "22:00:00",
                 "fieldType": "Text Input"
@@ -164,7 +186,7 @@
                 "children": {},
                 "isSpellCheck": false,
                 "iconAlign": "left",
-                "position": 10,
+                "position": 11,
                 "isDisabled": false,
                 "sourceData": 101,
                 "fieldType": "Number Input"
@@ -186,9 +208,9 @@
                 "children": {},
                 "isSpellCheck": false,
                 "iconAlign": "left",
-                "position": 4,
+                "position": 5,
                 "isDisabled": false,
-                "sourceData": 22.224665,
+                "sourceData": 25.011577,
                 "fieldType": "Number Input"
             },
             "area_id": {
@@ -208,9 +230,9 @@
                 "children": {},
                 "isSpellCheck": false,
                 "iconAlign": "left",
-                "position": 5,
+                "position": 6,
                 "isDisabled": false,
-                "sourceData": 440700000000,
+                "sourceData": 440224000000,
                 "fieldType": "Number Input"
             },
             "create_by": {
@@ -230,7 +252,7 @@
                 "children": {},
                 "isSpellCheck": false,
                 "iconAlign": "left",
-                "position": 11,
+                "position": 12,
                 "isDisabled": false,
                 "sourceData": 1001,
                 "fieldType": "Number Input"
@@ -252,7 +274,7 @@
                 "children": {},
                 "isSpellCheck": false,
                 "iconAlign": "left",
-                "position": 14,
+                "position": 15,
                 "isDisabled": false,
                 "sourceData": "2024-07-22T10:00:00Z",
                 "fieldType": "Text Input"
@@ -274,7 +296,7 @@
                 "children": {},
                 "isSpellCheck": false,
                 "iconAlign": "left",
-                "position": 0,
+                "position": 1,
                 "isDisabled": false,
                 "sourceData": "新江加油站",
                 "fieldType": "Text Input"
@@ -296,7 +318,7 @@
                 "children": {},
                 "isSpellCheck": false,
                 "iconAlign": "left",
-                "position": 6,
+                "position": 7,
                 "isDisabled": false,
                 "sourceData": "06:00:00",
                 "fieldType": "Text Input"
@@ -318,7 +340,7 @@
                 "children": {},
                 "isSpellCheck": false,
                 "iconAlign": "left",
-                "position": 8,
+                "position": 9,
                 "isDisabled": false,
                 "sourceData": "普通油站",
                 "fieldType": "Text Input"
@@ -340,7 +362,7 @@
                 "children": {},
                 "isSpellCheck": false,
                 "iconAlign": "left",
-                "position": 13,
+                "position": 14,
                 "isDisabled": false,
                 "sourceData": 1001,
                 "fieldType": "Number Input"
@@ -362,9 +384,9 @@
                 "children": {},
                 "isSpellCheck": false,
                 "iconAlign": "left",
-                "position": 3,
+                "position": 4,
                 "isDisabled": false,
-                "sourceData": 112.772767,
+                "sourceData": 113.610396,
                 "fieldType": "Number Input"
             }
         },
@@ -469,10 +491,13 @@
         {"key": "schema.__root_schema__.children.del_flag.defaultValue"},
         {"key": "schema.__root_schema__.children.del_flag.borderRadius"},
         {"key": "schema.__root_schema__.children.del_flag.accentColor"},
-        {"key": "schema.__root_schema__.children.tenant_id.options"}
+        {"key": "schema.__root_schema__.children.tenant_id.options"},
+        {"key": "schema.__root_schema__.children.customField1.borderRadius"},
+        {"key": "schema.__root_schema__.children.customField1.accentColor"},
+        {"key": "schema.__root_schema__.children.customField1.defaultValue"}
     ],
     "borderWidth": "0",
-    "sourceData": "{{_.omit(data_table.selectedRow, \"customColumn1\", \"__originalIndex__\", \"station_id\")}}",
+    "sourceData": "{{_.omit(data_table.selectedRow, \"customColumn1\", \"__originalIndex__\")}}",
     "showReset": true,
     "resetButtonLabel": "Reset",
     "key": "h9l9ozr8op",
