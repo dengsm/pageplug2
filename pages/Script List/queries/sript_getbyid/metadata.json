@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT * FROM nifi_datasync_script t  where t.delete_flag=0 and script_id ={{Table1.triggeredRow.script_id}};",
+      "body": "SELECT * FROM nifi_datasync_script t  where t.delete_flag=0 and script_id ={{Table1.selectedRow.script_id}};",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -26,7 +26,7 @@
         }
       ]
     },
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -36,9 +36,9 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "Table1.triggeredRow.script_id"
+      "Table1.selectedRow.script_id"
     ],
-    "userSetOnLoad": false,
+    "userSetOnLoad": true,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": [],
