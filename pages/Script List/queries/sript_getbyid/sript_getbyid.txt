@@ -1,0 +1,1 @@
+SELECT * FROM nifi_datasync_script t  where t.delete_flag=0 and script_id ={{Table1.triggeredRow.script_id}};

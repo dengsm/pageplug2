@@ -1,0 +1,1 @@
+SELECT * FROM nifi_datasync_script t  where t.delete_flag=0 order by t.update_time desc,script_id asc;

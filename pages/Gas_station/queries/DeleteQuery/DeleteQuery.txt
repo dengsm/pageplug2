@@ -1,0 +1,2 @@
+update gas_station set del_flag=2 
+  WHERE station_id = {{data_table.triggeredRow.station_id}};

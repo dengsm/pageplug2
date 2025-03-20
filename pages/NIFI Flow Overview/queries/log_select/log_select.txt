@@ -1,0 +1,4 @@
+select t.* from nifi_datasync_log t 
+where t.job_time >=     date_format(now()-interval 15 day,'%Y-%m-%d') 
+order by job_result asc,job_time desc 
+LIMIT {{ (Table1.pageNo - 1) * Table1.pageSize }}, {{ Table1.pageSize }} 

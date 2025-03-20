@@ -1,0 +1,128 @@
+{
+  "unpublishedPage": {
+    "name": "NIFI Flow Overview",
+    "slug": "nifi-flow-overview",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 1160,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 1000,
+          "containerStyle": "none",
+          "snapRows": 125,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 85,
+          "minHeight": 1100,
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "NIFI Flow Overview_total1",
+              "name": "total1",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "NIFI Flow Overview_exec_time",
+              "name": "exec_time",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "NIFI Flow Overview_jobs",
+              "name": "jobs",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "NIFI Flow Overview_overview",
+              "name": "overview",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "NIFI Flow Overview_rowcount",
+              "name": "rowcount",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "NIFI Flow Overview_config_select",
+              "name": "config_select",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                " (Table1.pageNo - 1) * Table1.pageSize ",
+                " Table1.pageSize "
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "NIFI Flow Overview_config_total",
+              "name": "config_total",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "NIFI Flow Overview_log_select",
+              "name": "log_select",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                " (Table1.pageNo - 1) * Table1.pageSize ",
+                " Table1.pageSize "
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "NIFI Flow Overview_log_total",
+              "name": "log_total",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "layoutOnLoadActionErrors": [],
+        "validOnPageLoadActions": true,
+        "id": "NIFI Flow Overview",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": false
+  },
+  "deleted": false,
+  "gitSyncId": "67d2b6247b23785b5ef69467_67d2c2ed7b23785b5ef69495"
+}

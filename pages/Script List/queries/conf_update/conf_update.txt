@@ -1,0 +1,17 @@
+update nifi_datasync_config
+    set
+     `job_group` = {{Table1.updatedRow.job_group}},
+     `job_enable`={{Table1.updatedRow.job_enable}},
+     `table_name`={{Table1.updatedRow.table_name}},
+     `describes`={{Table1.updatedRow.describes}},
+     `remark`= {{Table1.updatedRow.remark}},
+     `tenant_id`={{Table1.updatedRow.tenant_id}},
+     `script_id`={{Table1.updatedRow.script_id}},
+     `start_time`={{Table1.updatedRow.start_time}},
+     `end_time`={{Table1.updatedRow.end_time}},
+     `minute_add`={{Table1.updatedRow.minute_add}},
+     `minute_sub`={{Table1.updatedRow.minute_sub}},
+     `read_dbname`={{Table1.updatedRow.read_dbname}},
+     `write_dbname` ={{Table1.updatedRow.write_dbname}},
+		 `write_dbname` ={{Table1.updatedRow.station_id}}
+     where job_id ={{Table1.updatedRow.job_id}};

@@ -1,0 +1,2 @@
+select count(t.log_id) as cnt from nifi_datasync_log t 
+where t.job_time >=     date_format(now()-interval 15 day,'%Y-%m-%d') 

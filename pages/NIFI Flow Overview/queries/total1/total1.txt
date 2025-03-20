@@ -1,0 +1,4 @@
+select
+    sum(case when job_result='success' then 1 else 0 end ) as success,
+    sum(case when job_result<>'success' then 1 else 0 end ) as fail
+from nifi_datasync_log  t where job_time>= date_format(now()-interval 15 day,'%Y-%m-%d')  ;

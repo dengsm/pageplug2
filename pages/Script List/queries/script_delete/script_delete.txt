@@ -1,0 +1,1 @@
+update  nifi_datasync_script t  set t.delete_flag=1 where t.script_id={{Table2.triggeredRow.script_id}}

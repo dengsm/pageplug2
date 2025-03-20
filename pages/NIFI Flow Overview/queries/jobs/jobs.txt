@@ -1,0 +1,4 @@
+select
+    sum(case when job_status='执行中' then 1 else 0 end ) as job_run,
+    sum(1) as job_total
+from nifi_datasync_config  t ;

@@ -1,0 +1,8 @@
+update nifi_datasync_script t 
+ set 
+     script_name= {{script_name.text}},
+     query_script= {{query_script.text}},
+     insert_script= {{insert_script.text}},
+     update_script= {{update_script.text}},
+     delete_script= {{delete_script.text}}
+		 where t.script_id ={{Table2.selectedRow.script_id}}

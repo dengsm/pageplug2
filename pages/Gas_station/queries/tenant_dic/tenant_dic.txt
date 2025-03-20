@@ -1,0 +1,1 @@
+select t.tenant_id as value ,concat(t.company_name,'(' ,t.tenant_id,')') as label from sys_tenant  t;

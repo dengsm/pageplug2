@@ -1,0 +1,13 @@
+UPDATE gas_station SET
+		name = '{{update_form.fieldState.name.isVisible ? update_form.formData.name : update_form.sourceData.name}}',
+		address = '{{update_form.fieldState.address.isVisible ? update_form.formData.address : update_form.sourceData.address}}',
+    longitude = '{{update_form.fieldState.longitude.isVisible ? update_form.formData.longitude : update_form.sourceData.longitude}}',
+		latitude = '{{update_form.fieldState.latitude.isVisible ? update_form.formData.latitude : update_form.sourceData.latitude}}',
+		area_id = '{{update_form.fieldState.area_id.isVisible ? update_form.formData.area_id : update_form.sourceData.area_id}}',
+		business_start_time = '{{update_form.fieldState.business_start_time.isVisible ? update_form.formData.business_start_time : update_form.sourceData.business_start_time}}',
+		business_end_time = '{{update_form.fieldState.business_end_time.isVisible ? update_form.formData.business_end_time : update_form.sourceData.business_end_time}}',
+		station_type = '{{update_form.fieldState.station_type.isVisible ? update_form.formData.station_type : update_form.sourceData.station_type}}',
+		car_wash = '{{update_form.fieldState.car_wash.isVisible ? update_form.formData.car_wash : update_form.sourceData.car_wash}}',
+		create_dept = '{{update_form.fieldState.create_dept.isVisible ? update_form.formData.create_dept : update_form.sourceData.create_dept}}',
+		create_by = '{{update_form.fieldState.create_by.isVisible ? update_form.formData.create_by : update_form.sourceData.create_by}}'
+  WHERE station_id = {{data_table.selectedRow.station_id}};

@@ -1,0 +1,1 @@
+select concat(t.script_id,'_',t.script_name) as  label,t.script_id as value  from nifi_datasync_script t;

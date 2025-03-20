@@ -1,0 +1,45 @@
+{
+  "pages": [
+    {
+      "id": "NIFI Flow Overview",
+      "isDefault": true
+    },
+    {
+      "id": "Script List",
+      "isDefault": false
+    },
+    {
+      "id": "Gas_station",
+      "isDefault": false
+    }
+  ],
+  "viewMode": false,
+  "appIsExample": false,
+  "unreadCommentThreads": 0,
+  "unpublishedApplicationDetail": {
+    "appPositioning": {
+      "type": "FIXED"
+    },
+    "navigationSetting": {
+      "showNavbar": true,
+      "orientation": "top",
+      "navStyle": "stacked",
+      "position": "static",
+      "itemStyle": "text",
+      "colorStyle": "light",
+      "logoAssetId": "",
+      "logoConfiguration": "logoOnly",
+      "showSignIn": true
+    }
+  },
+  "color": "#D9E7FF",
+  "icon": "bar-graph",
+  "unpublishedCustomJSLibs": [],
+  "publishedCustomJSLibs": [],
+  "evaluationVersion": 2,
+  "applicationVersion": 2,
+  "collapseInvisibleWidgets": true,
+  "isManualUpdate": false,
+  "viewerLayout": "{\"color\":\"#71717a\",\"logoUrl\":\"https://img.icons8.com/?size=100&id=unnxqXGa7A5M&format=png&color=000000\",\"name\":\"数据流看板\",\"treeData\":[{\"title\":\"NIFI Flow Overview\",\"pageId\":\"67d2c2ed7b23785b5ef69496\",\"isPage\":true,\"key\":\"67d2c2ed7b23785b5ef69496\",\"children\":[]},{\"title\":\"Script List\",\"pageId\":\"67d2b6257b23785b5ef6946a\",\"isPage\":true,\"key\":\"67d2b6257b23785b5ef6946a\",\"children\":[]}],\"outsiderTree\":[]}",
+  "deleted": false
+}

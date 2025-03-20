@@ -1,0 +1,8 @@
+insert into nifi_datasync_script(script_name, query_script, insert_script, update_script, delete_script) VALUES 
+(
+{{Table2.newRow.script_name}},
+{{Table2.newRow.query_script}},
+ {{Table2.newRow.insert_script}},
+ {{Table2.newRow.update_script}},
+ {{Table2.newRow.delete_script}}
+)

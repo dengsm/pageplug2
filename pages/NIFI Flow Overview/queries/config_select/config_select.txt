@@ -1,0 +1,13 @@
+select
+       job_group,
+       job_status,
+       job_enable,
+       table_name,
+       describes,
+       tenant_id,
+       start_time,
+       end_time,
+       read_dbname,
+       write_dbname
+from nifi_datasync_config t  order by job_status,start_time desc 
+LIMIT {{ (Table1.pageNo - 1) * Table1.pageSize }}, {{ Table1.pageSize }}

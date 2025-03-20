@@ -1,0 +1,24 @@
+{
+  "unpublishedCollection": {
+    "name": "ScriptList",
+    "pageId": "NIFI Flow Overview",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": "[]"
+      },
+      {
+        "name": "myVar2",
+        "value": "{}"
+      }
+    ],
+    "userPermissions": []
+  },
+  "id": "NIFI Flow Overview_ScriptList",
+  "deleted": false,
+  "gitSyncId": "67d2b6247b23785b5ef69467_67d945957b23785b5ef694e3"
+}
