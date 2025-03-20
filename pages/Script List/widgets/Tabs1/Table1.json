@@ -648,7 +648,7 @@
         "job_id": {
             "boxShadow": "none",
             "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"job_id\"]))}}",
-            "onClick": "{{showModal('Modal3').then(() => {\n  sript_getbyid.run({}).then(() => {\n    showAlert('success' + Table1.triggeredRow.script_id);\n  });\n});}}",
+            "onClick": "{{showModal('Modal3').then(() => {\n  sript_getbyid.run({}).then(() => {});\n});}}",
             "buttonColor": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.colors.primaryColor))}}",
             "isEditable": false,
             "alias": "job_id",
