@@ -31,5 +31,8 @@ scriptupdate: () => {
       showAlert("删除失败", "error");
     });
 		closeModal('Modal2');
+},
+		scriptgetbyid: () => {
+  sript_getbyid.run()
 }
 }

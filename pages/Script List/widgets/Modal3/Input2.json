@@ -24,7 +24,7 @@
     "tags": ["数据录入-输入器组件"],
     "isLoading": false,
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "originalBottomRow": 63,
+    "originalBottomRow": 64,
     "mobileBottomRow": 60,
     "widgetName": "Input2",
     "displayName": "输入框",
