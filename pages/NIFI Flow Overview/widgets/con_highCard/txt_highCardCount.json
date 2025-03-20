@@ -17,7 +17,7 @@
     "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
     "parentColumnSpace": 17.78125,
     "dynamicTriggerPathList": [],
-    "leftColumn": 19,
+    "leftColumn": 18,
     "dynamicBindingPathList": [
         {"key": "fontFamily"},
         {"key": "text"}
@@ -27,7 +27,7 @@
     "text": "{{jobs.data.reduce((acc,value)=> acc+value.job_run,0)}}",
     "key": "t6hikle3ng",
     "isDeprecated": false,
-    "rightColumn": 42,
+    "rightColumn": 41,
     "textAlign": "LEFT",
     "dynamicHeight": "AUTO_HEIGHT",
     "widgetId": "o17t6l465i",
