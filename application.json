@@ -34,7 +34,11 @@
   },
   "color": "#D9E7FF",
   "icon": "bar-graph",
-  "unpublishedCustomJSLibs": [],
+  "unpublishedCustomJSLibs": [
+    {
+      "uidString": "R_https://cdn.jsdelivr.net/npm/ramda@0.30.1/dist/ramda.min.js"
+    }
+  ],
   "publishedCustomJSLibs": [],
   "evaluationVersion": 2,
   "applicationVersion": 2,

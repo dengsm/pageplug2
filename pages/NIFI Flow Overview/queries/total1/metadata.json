@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "select\n    sum(case when job_result='success' then 1 else 0 end ) as success,\n    sum(case when job_result<>'success' then 1 else 0 end ) as fail\nfrom nifi_datasync_log  t where job_time>= date_format(now()-interval 15 day,'%Y-%m-%d')  ;",
+      "body": "select\n    count(1) as cnt ,\n    job_result\nfrom nifi_datasync_log  t where job_time>= date_format(now()-interval 15 day,'%Y-%m-%d')\ngroup by t.job_result;",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {

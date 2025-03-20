@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "utils",
+    "pageId": "NIFI Flow Overview",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "NIFI Flow Overview_utils",
+  "deleted": false,
+  "gitSyncId": "67dbd673efbf6e58a2b2812f_67dc199fefbf6e58a2b28170"
+}
