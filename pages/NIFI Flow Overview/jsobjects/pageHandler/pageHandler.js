@@ -10,10 +10,12 @@ faillog_search: ()=>{
 		storeValue('searchtxt','fail').then(()=>{
 				log_select.run();
 		});
+	log_total.run();
 },
 successlog_search: ()=>{
 		storeValue('searchtxt','success').then(	() => {
      log_select.run();
     });
+	log_total.run();
 }
 }

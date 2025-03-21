@@ -3,3 +3,4 @@ where t.job_time >=     date_format(now()-interval 15 day,'%Y-%m-%d')
 and t.job_result={{global.store.searchtxt}}
 order by job_result asc,job_time desc 
 
+
