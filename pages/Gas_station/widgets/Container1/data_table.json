@@ -64,9 +64,15 @@
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "primaryColumnId": "station_id",
     "columnSizeMap": {
+        "create_by": 103,
+        "car_wash": 109,
+        "del_flag": 106,
         "task": 245,
-        "station_id": 106,
+        "create_time": 186,
+        "create_dept": 113,
+        "station_id": 101,
         "step": 62,
+        "station_type": 116,
         "status": 75
     },
     "widgetName": "data_table",
