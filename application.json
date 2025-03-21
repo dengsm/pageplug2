@@ -23,7 +23,7 @@
     "navigationSetting": {
       "showNavbar": true,
       "orientation": "top",
-      "navStyle": "stacked",
+      "navStyle": "inline",
       "position": "static",
       "itemStyle": "text",
       "colorStyle": "light",
@@ -34,6 +34,9 @@
   },
   "color": "#D9E7FF",
   "icon": "bar-graph",
+  "unpublishedAppLayout": {
+    "type": "DESKTOP"
+  },
   "unpublishedCustomJSLibs": [
     {
       "uidString": "R_https://cdn.jsdelivr.net/npm/ramda@0.30.1/dist/ramda.min.js"
@@ -44,6 +47,6 @@
   "applicationVersion": 2,
   "collapseInvisibleWidgets": true,
   "isManualUpdate": false,
-  "viewerLayout": "{\"color\":\"#71717a\",\"logoUrl\":\"https://img.icons8.com/?size=100&id=unnxqXGa7A5M&format=png&color=000000\",\"name\":\"数据流看板\",\"treeData\":[{\"title\":\"NIFI Flow Overview\",\"pageId\":\"67d2c2ed7b23785b5ef69496\",\"isPage\":true,\"key\":\"67d2c2ed7b23785b5ef69496\",\"children\":[]},{\"title\":\"Script List\",\"pageId\":\"67d2b6257b23785b5ef6946a\",\"isPage\":true,\"key\":\"67d2b6257b23785b5ef6946a\",\"children\":[]}],\"outsiderTree\":[]}",
+  "viewerLayout": "{\"color\":\"#71717a\",\"logoUrl\":\"https://img.icons8.com/?size=100&id=unnxqXGa7A5M&format=png&color=000000\",\"name\":\"数据流看板\",\"treeData\":[{\"title\":\"NIFI Flow Overview\",\"pageId\":\"67dd038715b4cd50161269b5\",\"isPage\":true,\"key\":\"67dd038715b4cd50161269b5\",\"children\":[]},{\"title\":\"Script List\",\"pageId\":\"67dd038715b4cd50161269b6\",\"isPage\":true,\"key\":\"67dd038715b4cd50161269b6\",\"children\":[],\"isHidden\":false},{\"title\":\"Gas_station\",\"pageId\":\"67dd038715b4cd50161269b4\",\"isPage\":true,\"key\":\"67dd038715b4cd50161269b4\",\"children\":[],\"isHidden\":false}],\"outsiderTree\":[]}",
   "deleted": false
 }
