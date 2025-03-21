@@ -1,4 +1,4 @@
 select table_name as table_name,
        sum(t.row_count) as rowcount
-from nifi_datasync_log t where job_time>= date_format(now()-interval 15 day,'%Y-%m-%d') 
+from nifi_datasync_log t where job_time>= date_format(now()-interval 7 day,'%Y-%m-%d') 
 group by table_name ;

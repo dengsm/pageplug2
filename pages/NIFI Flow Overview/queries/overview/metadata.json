@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "select date_format(job_time, '%y-%m-%d') as dt,\n       count(case when job_result='success' then 1 else null end ) as job_success,\n       count(case when job_result<>'success' then 1 else null end ) as job_fail\nfrom nifi_datasync_log t where job_time >= date_format(now()-interval 15 day,'%Y-%m-%d') \ngroup by date_format(job_time,'%y-%m-%d');",
+      "body": "select date_format(job_time, '%y-%m-%d') as dt,\n       count(case when job_result='success' then 1 else null end ) as job_success,\n       count(case when job_result<>'success' then 1 else null end ) as job_fail\nfrom nifi_datasync_log t where job_time >= date_format(now()-interval 7 day,'%Y-%m-%d') \ngroup by date_format(job_time,'%y-%m-%d') order by dt ;",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {

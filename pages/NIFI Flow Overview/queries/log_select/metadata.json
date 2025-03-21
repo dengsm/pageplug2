@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "select t.* from nifi_datasync_log t \nwhere t.job_time >=     date_format(now()-interval 15 day,'%Y-%m-%d') \nand t.job_result={{global.store.searchtxt}}\norder by job_result asc,job_time desc \n\n\n",
+      "body": "select t.* from nifi_datasync_log t \nwhere t.job_time >=     date_format(now()-interval 7 day,'%Y-%m-%d') \nand t.job_result={{global.store.searchtxt}}\norder by job_result asc,job_time desc \n\n\n",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {

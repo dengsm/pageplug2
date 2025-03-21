@@ -1,5 +1,5 @@
 select date_format(job_time, '%y-%m-%d') as dt,
        count(case when job_result='success' then 1 else null end ) as job_success,
        count(case when job_result<>'success' then 1 else null end ) as job_fail
-from nifi_datasync_log t where job_time >= date_format(now()-interval 15 day,'%Y-%m-%d') 
-group by date_format(job_time,'%y-%m-%d');
+from nifi_datasync_log t where job_time >= date_format(now()-interval 7 day,'%Y-%m-%d') 
+group by date_format(job_time,'%y-%m-%d') order by dt ;

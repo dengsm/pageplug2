@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "select table_name as table_name,\n       max(exec_time) as exec_time\nfrom nifi_datasync_log t where exec_time>1000 \nand job_time >=date_format(now()-interval 15 day,'%Y-%m-%d') \ngroup by table_name  limit 10;",
+      "body": "select table_name as table_name,\n       max(exec_time) as exec_time\nfrom nifi_datasync_log t where exec_time>1000 \nand job_time >=date_format(now()-interval 10 day,'%Y-%m-%d') \ngroup by table_name   limit 10;",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {

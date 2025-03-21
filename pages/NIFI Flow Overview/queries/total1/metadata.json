@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "select\n    count(1) as cnt ,\n    job_result\nfrom nifi_datasync_log  t where job_time>= date_format(now()-interval 15 day,'%Y-%m-%d')\ngroup by t.job_result;",
+      "body": "select\n    count(1) as cnt ,\n    job_result\nfrom nifi_datasync_log  t where job_time>= date_format(now()-interval 7 day,'%Y-%m-%d')\ngroup by t.job_result;",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {

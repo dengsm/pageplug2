@@ -1,5 +1,5 @@
 select t.* from nifi_datasync_log t 
-where t.job_time >=     date_format(now()-interval 15 day,'%Y-%m-%d') 
+where t.job_time >=     date_format(now()-interval 7 day,'%Y-%m-%d') 
 and t.job_result={{global.store.searchtxt}}
 order by job_result asc,job_time desc 
 
