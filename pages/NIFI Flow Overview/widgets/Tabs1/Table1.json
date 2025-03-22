@@ -105,7 +105,7 @@
         "datagrid",
         "table"
     ],
-    "bottomRow": 43,
+    "bottomRow": 45,
     "columnWidthMap": {
         "tenant_id": 119,
         "log_id": 70,
@@ -579,7 +579,7 @@
     "key": "rr3on7m320",
     "canFreezeColumn": true,
     "isDeprecated": false,
-    "rightColumn": 62,
+    "rightColumn": 63,
     "textSize": "0.675rem",
     "widgetId": "gok1q1gfk8",
     "minWidth": 450,

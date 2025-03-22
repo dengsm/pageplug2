@@ -11,7 +11,7 @@
         "form"
     ],
     "topRow": 0,
-    "bottomRow": 94,
+    "bottomRow": 73,
     "parentRowSpace": 10,
     "type": "FORM_WIDGET",
     "hideCard": false,
@@ -30,7 +30,7 @@
         "widgetName": "Canvas5",
         "displayName": "Canvas",
         "topRow": 0,
-        "bottomRow": 940,
+        "bottomRow": 890,
         "parentRowSpace": 1,
         "type": "CANVAS_WIDGET",
         "canExtend": false,

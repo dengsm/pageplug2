@@ -231,7 +231,7 @@
                 "iconAlign": "left",
                 "position": 5,
                 "isDisabled": false,
-                "sourceData": 4.40229E+11,
+                "sourceData": 440229000000,
                 "fieldType": "Number Input"
             },
             "create_by": {
