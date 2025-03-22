@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "INSERT INTO gas_station (\n\tstation_id,\n\tname,\n\taddress,\n\tlongitude,\n\tlatitude,\n\tarea_id,\n\tbusiness_start_time,\n\tbusiness_end_time,\n\tstation_type,\n\tcar_wash,\n\tcreate_dept,\n\tcreate_by\n)\nVALUES (\n\t'{{insert_form.formData.station_id}}',\n\t'{{insert_form.formData.name}}',\n\t'{{insert_form.formData.address}}',\n\t'{{insert_form.formData.longitude}}',\n\t'{{insert_form.formData.latitude}}',\n\t'{{insert_form.formData.area_id}}',\n\t'{{insert_form.formData.business_start_time}}',\n\t'{{insert_form.formData.business_end_time}}',\n\t'{{insert_form.formData.station_type}}',\n\t'{{insert_form.formData.car_wash}}',\n\t'{{insert_form.formData.create_dept}}',\n\t'{{insert_form.formData.create_by}}'\n);",
+      "body": "INSERT INTO gas_station (\n\tstation_id,\n\tname,\n\ttenant_id,\n\taddress,\n\tlongitude,\n\tlatitude,\n\tarea_id,\n\tbusiness_start_time,\n\tbusiness_end_time,\n\tstation_type,\n\tcar_wash,\n\tcreate_dept,\n\tcreate_by\n)\nVALUES (\n\t'{{insert_form.formData.station_id}}',\n\t'{{insert_form.formData.name}}',\n\t'{{insert_form.formData.tenant_id}}',\n\t'{{insert_form.formData.address}}',\n\t'{{insert_form.formData.longitude}}',\n\t'{{insert_form.formData.latitude}}',\n\t'{{insert_form.formData.area_id}}',\n\t'{{insert_form.formData.business_start_time}}',\n\t'{{insert_form.formData.business_end_time}}',\n\t'{{insert_form.formData.station_type}}',\n\t'{{insert_form.formData.car_wash}}',\n\t'{{insert_form.formData.create_dept}}',\n\t'{{insert_form.formData.create_by}}'\n);",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -27,6 +27,11 @@
       ]
     },
     "executeOnLoad": false,
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      }
+    ],
     "isValid": true,
     "invalids": [],
     "messages": [],
@@ -42,7 +47,8 @@
       "insert_form.formData.longitude",
       "insert_form.formData.name",
       "insert_form.formData.station_id",
-      "insert_form.formData.station_type"
+      "insert_form.formData.station_type",
+      "insert_form.formData.tenant_id"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

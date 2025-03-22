@@ -18,7 +18,7 @@
                 "labelTextSize": "0.875rem",
                 "identifier": "tenant_id",
                 "boxShadow": "none",
-                "isRequired": false,
+                "isRequired": true,
                 "isFilterable": false,
                 "isCustomField": false,
                 "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.tenant_id))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",

@@ -1,6 +1,7 @@
 INSERT INTO gas_station (
 	station_id,
 	name,
+	tenant_id,
 	address,
 	longitude,
 	latitude,
@@ -15,6 +16,7 @@ INSERT INTO gas_station (
 VALUES (
 	'{{insert_form.formData.station_id}}',
 	'{{insert_form.formData.name}}',
+	'{{insert_form.formData.tenant_id}}',
 	'{{insert_form.formData.address}}',
 	'{{insert_form.formData.longitude}}',
 	'{{insert_form.formData.latitude}}',

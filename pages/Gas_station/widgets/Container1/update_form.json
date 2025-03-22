@@ -177,7 +177,7 @@
                 "isCustomField": false,
                 "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.create_dept))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
                 "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-                "dataType": "number",
+                "dataType": "string",
                 "accessor": "create_dept",
                 "isVisible": true,
                 "label": "Create Dept",
@@ -188,8 +188,8 @@
                 "iconAlign": "left",
                 "position": 11,
                 "isDisabled": false,
-                "sourceData": 101,
-                "fieldType": "Number Input"
+                "sourceData": "",
+                "fieldType": "Text Input"
             },
             "latitude": {
                 "labelTextSize": "0.875rem",
@@ -199,7 +199,7 @@
                 "isCustomField": false,
                 "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.latitude))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
                 "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-                "dataType": "number",
+                "dataType": "string",
                 "accessor": "latitude",
                 "isVisible": true,
                 "label": "Latitude",
@@ -210,8 +210,8 @@
                 "iconAlign": "left",
                 "position": 5,
                 "isDisabled": false,
-                "sourceData": 24.809476,
-                "fieldType": "Number Input"
+                "sourceData": "",
+                "fieldType": "Text Input"
             },
             "area_id": {
                 "labelTextSize": "0.875rem",
@@ -221,7 +221,7 @@
                 "isCustomField": false,
                 "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.area_id))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
                 "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-                "dataType": "number",
+                "dataType": "string",
                 "accessor": "area_id",
                 "isVisible": true,
                 "label": "Area Id",
@@ -232,8 +232,8 @@
                 "iconAlign": "left",
                 "position": 6,
                 "isDisabled": false,
-                "sourceData": 440229000000,
-                "fieldType": "Number Input"
+                "sourceData": "",
+                "fieldType": "Text Input"
             },
             "create_by": {
                 "labelTextSize": "0.875rem",
@@ -243,7 +243,7 @@
                 "isCustomField": false,
                 "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.create_by))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
                 "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-                "dataType": "number",
+                "dataType": "string",
                 "accessor": "create_by",
                 "isVisible": true,
                 "label": "Create By",
@@ -254,8 +254,8 @@
                 "iconAlign": "left",
                 "position": 12,
                 "isDisabled": false,
-                "sourceData": 1001,
-                "fieldType": "Number Input"
+                "sourceData": "",
+                "fieldType": "Text Input"
             },
             "update_time": {
                 "labelTextSize": "0.875rem",
@@ -353,7 +353,7 @@
                 "isCustomField": false,
                 "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.update_by))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
                 "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-                "dataType": "number",
+                "dataType": "string",
                 "accessor": "update_by",
                 "isVisible": true,
                 "label": "Update By",
@@ -364,8 +364,8 @@
                 "iconAlign": "left",
                 "position": 14,
                 "isDisabled": false,
-                "sourceData": 1001,
-                "fieldType": "Number Input"
+                "sourceData": "",
+                "fieldType": "Text Input"
             },
             "longitude": {
                 "labelTextSize": "0.875rem",
@@ -375,7 +375,7 @@
                 "isCustomField": false,
                 "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.longitude))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
                 "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-                "dataType": "number",
+                "dataType": "string",
                 "accessor": "longitude",
                 "isVisible": true,
                 "label": "Longitude",
@@ -386,8 +386,8 @@
                 "iconAlign": "left",
                 "position": 4,
                 "isDisabled": false,
-                "sourceData": 113.620712,
-                "fieldType": "Number Input"
+                "sourceData": "",
+                "fieldType": "Text Input"
             }
         },
         "position": -1,

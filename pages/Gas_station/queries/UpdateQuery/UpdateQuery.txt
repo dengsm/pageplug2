@@ -11,4 +11,5 @@ UPDATE gas_station SET
 		create_dept = '{{update_form.fieldState.create_dept.isVisible ? update_form.formData.create_dept : update_form.sourceData.create_dept}}',
 		create_by = '{{update_form.fieldState.create_by.isVisible ? update_form.formData.create_by : update_form.sourceData.create_by}}',
 		station_id= '{{update_form.fieldState.station_id.isVisible ? update_form.formData.station_id : update_form.sourceData.station_id}}',
+		tenant_id= '{{update_form.fieldState.station_id.isVisible ? update_form.formData.tenant_id : update_form.sourceData.tenant_id}}'
   WHERE station_id = {{data_table.selectedRow.station_id}};
