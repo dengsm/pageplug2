@@ -26,7 +26,7 @@
     "leftColumn": 0,
     "delimiter": ",",
     "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-    "isVisibleFilters": true,
+    "isVisibleFilters": false,
     "isVisible": "true",
     "enableClientSideSearch": true,
     "version": 3,
@@ -54,23 +54,24 @@
     "originalBottomRow": 85,
     "primaryColumnId": "user_id",
     "columnSizeMap": {
-        "tenant_id": 102,
-        "bind_stations": 123,
+        "tenant_id": 80,
+        "bind_stations": 173,
         "task": 245,
-        "user_name": 118,
-        "nick_name": 133,
+        "user_name": 106,
+        "nick_name": 114,
         "step": 62,
+        "customColumn1": 92,
         "status": 75
     },
     "widgetName": "data_table",
     "defaultPageSize": 0,
     "columnOrder": [
+        "customColumn1",
         "tenant_id",
         "user_name",
         "nick_name",
         "bind_stations",
-        "user_id",
-        "customColumn1"
+        "user_id"
     ],
     "dynamicPropertyPathList": [
         {"key": "primaryColumns.customColumn1.borderRadius"},
@@ -78,7 +79,7 @@
         {"key": "primaryColumns.bind_stations.textSize"}
     ],
     "displayName": "Table",
-    "bottomRow": 61,
+    "bottomRow": 55,
     "parentRowSpace": 10,
     "defaultSelectedRow": "0",
     "hideCard": false,
@@ -239,7 +240,7 @@
         "buttonLabelColor": "#FFFFFF"
     }},
     "labelTextSize": "0.875rem",
-    "rightColumn": 37,
+    "rightColumn": 41,
     "textSize": "0.675rem",
     "widgetId": "uji69u6swx",
     "tableData": "{{SelectQuery.data}}",
