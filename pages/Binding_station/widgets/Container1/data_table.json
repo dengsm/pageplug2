@@ -54,7 +54,7 @@
     "originalBottomRow": 85,
     "primaryColumnId": "user_id",
     "columnSizeMap": {
-        "tenant_id": 80,
+        "tenant_id": 60,
         "bind_stations": 173,
         "task": 245,
         "user_name": 106,
@@ -240,7 +240,7 @@
         "buttonLabelColor": "#FFFFFF"
     }},
     "labelTextSize": "0.875rem",
-    "rightColumn": 41,
+    "rightColumn": 35,
     "textSize": "0.675rem",
     "widgetId": "uji69u6swx",
     "tableData": "{{SelectQuery.data}}",

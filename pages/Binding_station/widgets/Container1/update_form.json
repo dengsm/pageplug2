@@ -144,7 +144,7 @@
     "animateLoading": true,
     "parentColumnSpace": 16.3125,
     "dynamicTriggerPathList": [{"key": "onSubmit"}],
-    "leftColumn": 41,
+    "leftColumn": 36,
     "dynamicBindingPathList": [
         {"key": "schema.__root_schema__.defaultValue"},
         {"key": "sourceData"},
