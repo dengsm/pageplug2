@@ -11,6 +11,10 @@
     {
       "id": "Gas_station",
       "isDefault": false
+    },
+    {
+      "id": "Binding_station",
+      "isDefault": false
     }
   ],
   "viewMode": false,

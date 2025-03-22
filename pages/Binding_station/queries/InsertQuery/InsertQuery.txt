@@ -1,0 +1,28 @@
+INSERT INTO sys_user (
+	user_id,
+	user_name,
+	tenant_id,
+	dept_id,
+	bind_stations,
+	nick_name,
+	user_type,
+	email,
+	phonenumber,
+	sex,
+	avatar,
+	password
+)
+VALUES (
+	'{{insert_form.formData.user_id}}',
+	'{{insert_form.formData.user_name}}',
+	'{{insert_form.formData.tenant_id}}',
+	'{{insert_form.formData.dept_id}}',
+	'{{insert_form.formData.bind_stations}}',
+	'{{insert_form.formData.nick_name}}',
+	'{{insert_form.formData.user_type}}',
+	'{{insert_form.formData.email}}',
+	'{{insert_form.formData.phonenumber}}',
+	'{{insert_form.formData.sex}}',
+	'{{insert_form.formData.avatar}}',
+	'{{insert_form.formData.password}}'
+);
