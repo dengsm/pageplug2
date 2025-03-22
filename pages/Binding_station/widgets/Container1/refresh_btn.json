@@ -2,7 +2,7 @@
     "labelTextSize": "0.875rem",
     "boxShadow": "none",
     "widgetName": "refresh_btn",
-    "rightColumn": 39,
+    "rightColumn": 29,
     "onClick": "{{SelectQuery.run()}}",
     "iconName": "refresh",
     "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -18,7 +18,7 @@
     "parentColumnSpace": 12.0703125,
     "dynamicTriggerPathList": [{"key": "onClick"}],
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "leftColumn": 36,
+    "leftColumn": 26,
     "dynamicBindingPathList": [
         {"key": "borderRadius"},
         {"key": "buttonColor"}
