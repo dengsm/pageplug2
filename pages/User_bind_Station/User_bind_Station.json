@@ -1,7 +1,7 @@
 {
   "unpublishedPage": {
-    "name": "Binding_station",
-    "slug": "binding-station",
+    "name": "User_bind_Station",
+    "slug": "user-bind-station",
     "layouts": [
       {
         "viewMode": false,
@@ -29,7 +29,7 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "Binding_station_SelectQuery",
+              "id": "User_bind_Station_SelectQuery",
               "name": "SelectQuery",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
@@ -45,7 +45,7 @@
           ],
           [
             {
-              "id": "Binding_station_station_dic",
+              "id": "User_bind_Station_station_dic",
               "name": "station_dic",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
@@ -58,7 +58,7 @@
         ],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
-        "id": "Binding_station",
+        "id": "User_bind_Station",
         "deleted": false,
         "policies": [],
         "userPermissions": []

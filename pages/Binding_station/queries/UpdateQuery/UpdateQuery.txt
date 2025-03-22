@@ -1,6 +1,0 @@
-UPDATE sys_user SET
-		user_name = '{{update_form.fieldState.user_name.isVisible ? update_form.formData.user_name : update_form.sourceData.user_name}}',
-		tenant_id = '{{update_form.fieldState.tenant_id.isVisible ? update_form.formData.tenant_id : update_form.sourceData.tenant_id}}',
-		bind_stations = '{{update_form.fieldState.bind_stations.isVisible ? update_form.formData.bind_stations .toString(): update_form.sourceData.bind_stations.toString()}}',
-		nick_name = '{{update_form.fieldState.nick_name.isVisible ? update_form.formData.nick_name : update_form.sourceData.nick_name}}'
-  WHERE user_id = {{data_table.selectedRow.user_id.toString()}};
