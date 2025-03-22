@@ -19,6 +19,7 @@
                 "identifier": "tenant_id",
                 "boxShadow": "none",
                 "isRequired": false,
+                "isFilterable": false,
                 "isCustomField": false,
                 "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.tenant_id))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
                 "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
@@ -26,15 +27,15 @@
                 "accessor": "tenant_id",
                 "isVisible": true,
                 "label": "Tenant Id",
+                "serverSideFiltering": false,
                 "originalIdentifier": "tenant_id",
                 "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
                 "children": {},
-                "isSpellCheck": false,
-                "iconAlign": "left",
-                "position": 15,
+                "options": "{{\n  (tenant_dic.data || []).map(item => ({\n   value: item.value,\n\t  label: item.label\n  }))\n}}",
+                "position": 1,
                 "isDisabled": false,
                 "sourceData": "000000",
-                "fieldType": "Text Input"
+                "fieldType": "Select"
             },
             "car_wash": {
                 "labelTextSize": "0.875rem",
@@ -53,7 +54,7 @@
                 "children": {},
                 "isSpellCheck": false,
                 "iconAlign": "left",
-                "position": 9,
+                "position": 10,
                 "isDisabled": false,
                 "sourceData": "1",
                 "fieldType": "Text Input"
@@ -97,7 +98,7 @@
                 "children": {},
                 "isSpellCheck": false,
                 "iconAlign": "left",
-                "position": 2,
+                "position": 3,
                 "isDisabled": false,
                 "sourceData": "广东省韶关市浈江区新韶镇大学路27号",
                 "fieldType": "Text Input"
@@ -119,7 +120,7 @@
                 "children": {},
                 "isSpellCheck": false,
                 "iconAlign": "left",
-                "position": 12,
+                "position": 13,
                 "isDisabled": false,
                 "sourceData": "2024-07-22T10:00:00Z",
                 "fieldType": "Text Input"
@@ -141,7 +142,7 @@
                 "children": {},
                 "isSpellCheck": false,
                 "iconAlign": "left",
-                "position": 7,
+                "position": 8,
                 "isDisabled": false,
                 "sourceData": "22:00:00",
                 "fieldType": "Text Input"
@@ -163,7 +164,7 @@
                 "children": {},
                 "isSpellCheck": false,
                 "iconAlign": "left",
-                "position": 10,
+                "position": 11,
                 "isDisabled": false,
                 "sourceData": 101,
                 "fieldType": "Number Input"
@@ -207,7 +208,7 @@
                 "children": {},
                 "isSpellCheck": false,
                 "iconAlign": "left",
-                "position": 4,
+                "position": 5,
                 "isDisabled": false,
                 "sourceData": 24.809476,
                 "fieldType": "Number Input"
@@ -229,7 +230,7 @@
                 "children": {},
                 "isSpellCheck": false,
                 "iconAlign": "left",
-                "position": 5,
+                "position": 6,
                 "isDisabled": false,
                 "sourceData": 440229000000,
                 "fieldType": "Number Input"
@@ -251,7 +252,7 @@
                 "children": {},
                 "isSpellCheck": false,
                 "iconAlign": "left",
-                "position": 11,
+                "position": 12,
                 "isDisabled": false,
                 "sourceData": 1001,
                 "fieldType": "Number Input"
@@ -273,7 +274,7 @@
                 "children": {},
                 "isSpellCheck": false,
                 "iconAlign": "left",
-                "position": 14,
+                "position": 15,
                 "isDisabled": false,
                 "sourceData": "2024-07-22T10:00:00Z",
                 "fieldType": "Text Input"
@@ -295,7 +296,7 @@
                 "children": {},
                 "isSpellCheck": false,
                 "iconAlign": "left",
-                "position": 1,
+                "position": 2,
                 "isDisabled": false,
                 "sourceData": "新江加油站",
                 "fieldType": "Text Input"
@@ -317,7 +318,7 @@
                 "children": {},
                 "isSpellCheck": false,
                 "iconAlign": "left",
-                "position": 6,
+                "position": 7,
                 "isDisabled": false,
                 "sourceData": "06:00:00",
                 "fieldType": "Text Input"
@@ -339,7 +340,7 @@
                 "children": {},
                 "isSpellCheck": false,
                 "iconAlign": "left",
-                "position": 8,
+                "position": 9,
                 "isDisabled": false,
                 "sourceData": "普通油站",
                 "fieldType": "Text Input"
@@ -361,7 +362,7 @@
                 "children": {},
                 "isSpellCheck": false,
                 "iconAlign": "left",
-                "position": 13,
+                "position": 14,
                 "isDisabled": false,
                 "sourceData": 1001,
                 "fieldType": "Number Input"
@@ -383,7 +384,7 @@
                 "children": {},
                 "isSpellCheck": false,
                 "iconAlign": "left",
-                "position": 3,
+                "position": 4,
                 "isDisabled": false,
                 "sourceData": 113.620712,
                 "fieldType": "Number Input"
@@ -417,7 +418,7 @@
     "iconSVG": "/static/media/icon.6bacf7df.svg",
     "onSubmit": "{{InsertQuery.run(\n\t() => SelectQuery.run()\n\t\t\t\t\t.then(() => closeModal('Insert_Modal')), \n\t(error) => showAlert(`Error while inserting resource!\\n ${error}`,'error'))\n}}",
     "topRow": 0,
-    "bottomRow": 84,
+    "bottomRow": 83,
     "fieldLimitExceeded": false,
     "parentRowSpace": 10,
     "title": "Insert Row",
@@ -488,7 +489,8 @@
         {"key": "schema.__root_schema__.children.tenant_id.accentColor"},
         {"key": "schema.__root_schema__.children.del_flag.defaultValue"},
         {"key": "schema.__root_schema__.children.del_flag.borderRadius"},
-        {"key": "schema.__root_schema__.children.del_flag.accentColor"}
+        {"key": "schema.__root_schema__.children.del_flag.accentColor"},
+        {"key": "schema.__root_schema__.children.tenant_id.options"}
     ],
     "borderWidth": "",
     "sourceData": "{{_.omit(data_table.tableData[0], \"customColumn1\", \"__primaryKey__\")}}",

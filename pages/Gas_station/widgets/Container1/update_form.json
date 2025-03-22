@@ -210,7 +210,7 @@
                 "iconAlign": "left",
                 "position": 5,
                 "isDisabled": false,
-                "sourceData": 24.949506,
+                "sourceData": 24.809476,
                 "fieldType": "Number Input"
             },
             "area_id": {
@@ -232,7 +232,7 @@
                 "iconAlign": "left",
                 "position": 6,
                 "isDisabled": false,
-                "sourceData": 440232000000,
+                "sourceData": 440229000000,
                 "fieldType": "Number Input"
             },
             "create_by": {
@@ -386,7 +386,7 @@
                 "iconAlign": "left",
                 "position": 4,
                 "isDisabled": false,
-                "sourceData": 113.454342,
+                "sourceData": 113.620712,
                 "fieldType": "Number Input"
             }
         },
