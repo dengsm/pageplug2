@@ -232,7 +232,7 @@
                 "iconAlign": "left",
                 "position": 6,
                 "isDisabled": false,
-                "sourceData": 440224000000,
+                "sourceData": 4.40224E+11,
                 "fieldType": "Number Input"
             },
             "create_by": {
@@ -420,7 +420,7 @@
     "iconSVG": "/static/media/icon.6bacf7df.svg",
     "onSubmit": "{{UpdateQuery.run(() => SelectQuery.run(), (error) => showAlert(`Error while updating resource!\\n ${error}`,'error'))}}",
     "topRow": 0,
-    "bottomRow": 89,
+    "bottomRow": 49,
     "fieldLimitExceeded": false,
     "parentRowSpace": 10,
     "title": "Update Row station_id: {{data_table.selectedRow.station_id}}",

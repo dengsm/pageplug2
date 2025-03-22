@@ -35,7 +35,10 @@
   "color": "#D9E7FF",
   "icon": "bar-graph",
   "unpublishedAppLayout": {
-    "type": "DESKTOP"
+    "type": "FLUID"
+  },
+  "publishedAppLayout": {
+    "type": "FLUID"
   },
   "unpublishedCustomJSLibs": [
     {

@@ -24,7 +24,7 @@
     ],
     "shouldTruncate": false,
     "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "text": "{{utils.succ_sf(total1.data)}}",
+    "text": "{{total1.data.filter(item => item.job_result === \"success\")[0].cnt}}",
     "key": "t6hikle3ng",
     "isDeprecated": false,
     "rightColumn": 47,

@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 960,
+          "bottomRow": 1100,
           "containerStyle": "none",
           "snapRows": 125,
           "parentRowSpace": 1,
@@ -26,16 +26,6 @@
           "leftColumn": 0
         },
         "layoutOnLoadActions": [
-          [
-            {
-              "id": "NIFI Flow Overview_total1",
-              "name": "total1",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            }
-          ],
           [
             {
               "id": "NIFI Flow Overview_exec_time",
