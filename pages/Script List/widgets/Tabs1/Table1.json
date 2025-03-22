@@ -279,7 +279,7 @@
             "alias": "station_id",
             "enableSort": true,
             "isSaveVisible": true,
-            "placeholderText": "为空时动态获取源油站Id",
+            "placeholderText": "一般不需要设置",
             "id": "station_id",
             "isDisabled": false,
             "allowSameOptionsInNewRow": true,

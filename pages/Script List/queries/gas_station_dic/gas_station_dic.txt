@@ -1,1 +1,3 @@
-select t.station_id as value ,concat(t.name,'(' ,t.station_id,')') as label from gas_station  t;
+select t.station_id as value ,concat(t.name,'(' ,t.station_id,')') as label from gas_station  t
+union all 
+select null as value ,'置NULL' as label ;
