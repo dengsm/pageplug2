@@ -31,7 +31,7 @@
                 "originalIdentifier": "tenant_id",
                 "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
                 "children": {},
-                "options": "{{\n  (tenant_dic.data || []).map(item => ({\n   value: item.value,\n\t  label: item.label\n  }))\n}}",
+                "options": "{{\n  (tenant_dic2.data || []).map(item => ({\n   value: item.value,\n\t  label: item.label\n  }))\n}}",
                 "position": 1,
                 "isDisabled": false,
                 "sourceData": "000000",

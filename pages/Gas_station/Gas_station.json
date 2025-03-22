@@ -29,8 +29,8 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "Gas_station_tenant_dic",
-              "name": "tenant_dic",
+              "id": "Gas_station_tenant_dic2",
+              "name": "tenant_dic2",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],

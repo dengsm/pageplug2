@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "mysql-plugin",
   "unpublishedAction": {
-    "name": "tenant_dic",
+    "name": "tenant_dic2",
     "datasource": {
       "name": "seaos",
       "pluginId": "mysql-plugin",
@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "select t.tenant_id as value ,concat(t.company_name,'(' ,t.tenant_id,')') as label from sys_tenant  t;",
+      "body": "select t.tenant_id as value ,\nconcat(t.company_name,'(' ,t.tenant_id,')') as label from sys_tenant  t;",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -36,9 +36,9 @@
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": [],
-    "createdAt": "2025-03-20T09:20:16Z"
+    "createdAt": "2025-03-21T06:13:27Z"
   },
-  "id": "Gas_station_tenant_dic",
+  "id": "Gas_station_tenant_dic2",
   "deleted": false,
   "gitSyncId": "67dbd673efbf6e58a2b2812f_67dbddd0efbf6e58a2b2815f"
 }
