@@ -3,7 +3,7 @@
     "boxShadow": "none",
     "widgetName": "refresh_btn",
     "onClick": "{{SelectQuery.run()}}",
-    "rightColumn": 39,
+    "rightColumn": 25,
     "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
     "iconName": "refresh",
     "widgetId": "2jj0197tff",
@@ -18,7 +18,7 @@
     "isLoading": false,
     "parentColumnSpace": 12.0703125,
     "dynamicTriggerPathList": [{"key": "onClick"}],
-    "leftColumn": 35,
+    "leftColumn": 21,
     "dynamicBindingPathList": [
         {"key": "borderRadius"},
         {"key": "buttonColor"}

@@ -3,7 +3,7 @@
     "boxShadow": "none",
     "widgetName": "add_btn",
     "onClick": "{{showModal('Insert_Modal')}}",
-    "rightColumn": 33,
+    "rightColumn": 20,
     "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
     "iconName": "add",
     "widgetId": "kby34l9nbb",
@@ -18,7 +18,7 @@
     "isLoading": false,
     "parentColumnSpace": 12.0703125,
     "dynamicTriggerPathList": [{"key": "onClick"}],
-    "leftColumn": 28,
+    "leftColumn": 15,
     "dynamicBindingPathList": [
         {"key": "buttonColor"},
         {"key": "borderRadius"}
