@@ -41,22 +41,23 @@
                 "identifier": "bind_stations",
                 "boxShadow": "none",
                 "isRequired": false,
+                "isFilterable": false,
                 "isCustomField": false,
-                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.bind_stations))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+                "defaultValue": "{{((sourceData, formData, fieldState) => (\n\tsourceData.bind_stations?sourceData.bind_stations.split(','):[]\n ))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
                 "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
                 "dataType": "string",
                 "accessor": "bind_stations",
                 "isVisible": true,
                 "label": "Bind Stations",
+                "serverSideFiltering": false,
                 "originalIdentifier": "bind_stations",
                 "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
                 "children": {},
-                "isSpellCheck": false,
-                "iconAlign": "left",
+                "options": "{{\n  (station_dic.data || []).map(item => ({\n   label: item.label,\n\t\tvalue: item.value.toString()\n\t \n  }))\n}}",
                 "position": 2,
                 "isDisabled": false,
                 "sourceData": "1,2,3,5,6,8,9",
-                "fieldType": "Text Input"
+                "fieldType": "Multiselect"
             },
             "user_name": {
                 "labelTextSize": "0.875rem",
@@ -167,7 +168,8 @@
         {"key": "schema.__root_schema__.children.user_name.accentColor"},
         {"key": "schema.__root_schema__.children.nick_name.defaultValue"},
         {"key": "schema.__root_schema__.children.nick_name.borderRadius"},
-        {"key": "schema.__root_schema__.children.nick_name.accentColor"}
+        {"key": "schema.__root_schema__.children.nick_name.accentColor"},
+        {"key": "schema.__root_schema__.children.bind_stations.options"}
     ],
     "borderWidth": "0",
     "sourceData": "{{_.omit(data_table.selectedRow, \"customColumn1\", \"__originalIndex__\", \"user_id\")}}",

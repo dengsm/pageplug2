@@ -1,13 +1,6 @@
 UPDATE sys_user SET
 		user_name = '{{update_form.fieldState.user_name.isVisible ? update_form.formData.user_name : update_form.sourceData.user_name}}',
 		tenant_id = '{{update_form.fieldState.tenant_id.isVisible ? update_form.formData.tenant_id : update_form.sourceData.tenant_id}}',
-    dept_id = '{{update_form.fieldState.dept_id.isVisible ? update_form.formData.dept_id : update_form.sourceData.dept_id}}',
-		bind_stations = '{{update_form.fieldState.bind_stations.isVisible ? update_form.formData.bind_stations : update_form.sourceData.bind_stations}}',
-		nick_name = '{{update_form.fieldState.nick_name.isVisible ? update_form.formData.nick_name : update_form.sourceData.nick_name}}',
-		user_type = '{{update_form.fieldState.user_type.isVisible ? update_form.formData.user_type : update_form.sourceData.user_type}}',
-		email = '{{update_form.fieldState.email.isVisible ? update_form.formData.email : update_form.sourceData.email}}',
-		phonenumber = '{{update_form.fieldState.phonenumber.isVisible ? update_form.formData.phonenumber : update_form.sourceData.phonenumber}}',
-		sex = '{{update_form.fieldState.sex.isVisible ? update_form.formData.sex : update_form.sourceData.sex}}',
-		avatar = '{{update_form.fieldState.avatar.isVisible ? update_form.formData.avatar : update_form.sourceData.avatar}}',
-		password = '{{update_form.fieldState.password.isVisible ? update_form.formData.password : update_form.sourceData.password}}'
-  WHERE user_id = {{data_table.selectedRow.user_id}};
+		bind_stations = '{{update_form.fieldState.bind_stations.isVisible ? update_form.formData.bind_stations .toString(): update_form.sourceData.bind_stations.toString()}}',
+		nick_name = '{{update_form.fieldState.nick_name.isVisible ? update_form.formData.nick_name : update_form.sourceData.nick_name}}'
+  WHERE user_id = {{data_table.selectedRow.user_id.toString()}};

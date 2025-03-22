@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT t.tenant_id,t.user_name,t.nick_name,t.bind_stations,t.user_id  FROM sys_user t\nWHERE user_name like '%{{data_table.searchText || \"\"}}%'\nORDER BY {{data_table.sortOrder.column || 'user_id'}} {{data_table.sortOrder.order || \"ASC\"}}\nLIMIT {{data_table.pageSize}}\nOFFSET {{(data_table.pageNo - 1) * data_table.pageSize}};",
+      "body": "SELECT t.tenant_id,t.user_name,t.nick_name,t.bind_stations,concat (t.user_id ,'') as user_id  FROM sys_user t\nWHERE user_name like '%{{data_table.searchText || \"\"}}%'\nORDER BY {{data_table.sortOrder.column || 'user_id'}} {{data_table.sortOrder.order || \"ASC\"}}\nLIMIT {{data_table.pageSize}}\nOFFSET {{(data_table.pageNo - 1) * data_table.pageSize}};",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {

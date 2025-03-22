@@ -20,7 +20,8 @@
         {"key": "primaryColumns.bind_stations.computedValue"},
         {"key": "primaryColumns.user_name.computedValue"},
         {"key": "primaryColumns.nick_name.computedValue"},
-        {"key": "primaryColumns.user_id.computedValue"}
+        {"key": "primaryColumns.user_id.computedValue"},
+        {"key": "primaryColumns.bind_stations.textSize"}
     ],
     "leftColumn": 0,
     "delimiter": ",",
@@ -54,8 +55,10 @@
     "primaryColumnId": "user_id",
     "columnSizeMap": {
         "tenant_id": 102,
+        "bind_stations": 123,
         "task": 245,
-        "user_name": 103,
+        "user_name": 118,
+        "nick_name": 133,
         "step": 62,
         "status": 75
     },
@@ -71,7 +74,8 @@
     ],
     "dynamicPropertyPathList": [
         {"key": "primaryColumns.customColumn1.borderRadius"},
-        {"key": "textSize"}
+        {"key": "textSize"},
+        {"key": "primaryColumns.bind_stations.textSize"}
     ],
     "displayName": "Table",
     "bottomRow": 61,
@@ -83,7 +87,8 @@
         {"key": "primaryColumns.customColumn1.onClick"},
         {"key": "onPageChange"},
         {"key": "onSearchTextChanged"},
-        {"key": "onSort"}
+        {"key": "onSort"},
+        {"key": "onRowSelected"}
     ],
     "primaryColumns": {
         "tenant_id": {
@@ -92,7 +97,7 @@
             "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.tenant_id))}}",
             "textSize": "0.675rem",
             "index": 1,
-            "isVisible": true,
+            "isVisible": false,
             "label": "tenant_id",
             "textColor": "",
             "columnType": "text",
@@ -109,7 +114,7 @@
             "isCellVisible": true,
             "isDerived": false,
             "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.bind_stations))}}",
-            "textSize": "0.675rem",
+            "textSize": "{{data_table.sanitizedTableData.map((currentRow) => ( '0.675rem'))}}",
             "index": 3,
             "isVisible": true,
             "label": "bind_stations",
@@ -129,6 +134,7 @@
             "isDerived": false,
             "computedValue": "{{data_table.sanitizedTableData.map((currentRow) => ( currentRow.user_id))}}",
             "textSize": "0.675rem",
+            "iconName": "",
             "index": 4,
             "isVisible": false,
             "label": "user_id",
@@ -206,6 +212,7 @@
             "buttonLabelColor": "#FFFFFF"
         }
     },
+    "onRowSelected": "{{station_dic.run()}}",
     "key": "zba5qel0au",
     "derivedColumns": {"customColumn1": {
         "isCellVisible": true,
@@ -232,7 +239,7 @@
         "buttonLabelColor": "#FFFFFF"
     }},
     "labelTextSize": "0.875rem",
-    "rightColumn": 36,
+    "rightColumn": 37,
     "textSize": "0.675rem",
     "widgetId": "uji69u6swx",
     "tableData": "{{SelectQuery.data}}",

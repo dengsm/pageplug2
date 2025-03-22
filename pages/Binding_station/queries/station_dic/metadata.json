@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "mysql-plugin",
   "unpublishedAction": {
-    "name": "DeleteQuery",
+    "name": "station_dic",
     "datasource": {
       "name": "seaos",
       "pluginId": "mysql-plugin",
@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "update sys_user t set t.del_flag=1\n  WHERE user_id = {{data_table.triggeredRow.user_id}};",
+      "body": "select t.station_id as value ,\nconcat(t.name,'(' ,t.station_id,')') as label from gas_station  t where t.tenant_id={{data_table.selectedRow.tenant_id}};",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -26,20 +26,25 @@
         }
       ]
     },
-    "executeOnLoad": false,
-    "dynamicBindingPathList": [],
+    "executeOnLoad": true,
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      }
+    ],
     "isValid": true,
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "data_table.triggeredRow.user_id"
+      "data_table.selectedRow.tenant_id"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2025-03-22T08:00:16Z"
   },
-  "id": "Binding_station_DeleteQuery",
+  "id": "Binding_station_station_dic",
   "deleted": false,
-  "gitSyncId": "67dd038215b4cd50161269af_67de570e15b4cd50161269f0"
+  "gitSyncId": "67dd038215b4cd50161269af_67de6e1015b4cd50161269f9"
 }

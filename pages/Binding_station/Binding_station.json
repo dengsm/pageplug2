@@ -42,6 +42,18 @@
               ],
               "timeoutInMillisecond": 10000
             }
+          ],
+          [
+            {
+              "id": "Binding_station_station_dic",
+              "name": "station_dic",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "data_table.selectedRow.tenant_id"
+              ],
+              "timeoutInMillisecond": 10000
+            }
           ]
         ],
         "layoutOnLoadActionErrors": [],
