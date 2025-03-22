@@ -28,6 +28,16 @@
         "layoutOnLoadActions": [
           [
             {
+              "id": "NIFI Flow Overview_total1",
+              "name": "total1",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
               "id": "NIFI Flow Overview_exec_time",
               "name": "exec_time",
               "confirmBeforeExecute": false,
