@@ -13,5 +13,5 @@ update nifi_datasync_config
      `minute_sub`={{Table1.updatedRow.minute_sub}},
      `read_dbname`={{Table1.updatedRow.read_dbname}},
      `write_dbname` ={{Table1.updatedRow.write_dbname}},
-		 `station_id` ={{Table1.updatedRow.station_id}}
+    `station_id` ={{Table1.updatedRow.station_id==='null'? null:Table1.updatedRow.station_id}}
      where job_id ={{Table1.updatedRow.job_id}};

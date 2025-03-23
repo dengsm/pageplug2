@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "select t.station_id as value ,concat(t.name,'(' ,t.station_id,')') as label from gas_station  t\nunion all \nselect null as value ,'置NULL' as label ;",
+      "body": "select t.station_id as value ,concat(t.name,'(' ,t.station_id,')') as label from gas_station  t\nunion all \nselect 'null' as value ,'置NULL' as label ;",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {

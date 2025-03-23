@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "update nifi_datasync_config\n    set\n     `job_group` = {{Table1.updatedRow.job_group}},\n     `job_enable`={{Table1.updatedRow.job_enable}},\n     `table_name`={{Table1.updatedRow.table_name}},\n     `describes`={{Table1.updatedRow.describes}},\n     `remark`= {{Table1.updatedRow.remark}},\n     `tenant_id`={{Table1.updatedRow.tenant_id}},\n     `script_id`={{Table1.updatedRow.script_id}},\n     `start_time`={{Table1.updatedRow.start_time}},\n     `end_time`={{Table1.updatedRow.end_time}},\n     `minute_add`={{Table1.updatedRow.minute_add}},\n     `minute_sub`={{Table1.updatedRow.minute_sub}},\n     `read_dbname`={{Table1.updatedRow.read_dbname}},\n     `write_dbname` ={{Table1.updatedRow.write_dbname}},\n\t\t `station_id` ={{Table1.updatedRow.station_id}}\n     where job_id ={{Table1.updatedRow.job_id}};",
+      "body": "update nifi_datasync_config\n    set\n     `job_group` = {{Table1.updatedRow.job_group}},\n     `job_enable`={{Table1.updatedRow.job_enable}},\n     `table_name`={{Table1.updatedRow.table_name}},\n     `describes`={{Table1.updatedRow.describes}},\n     `remark`= {{Table1.updatedRow.remark}},\n     `tenant_id`={{Table1.updatedRow.tenant_id}},\n     `script_id`={{Table1.updatedRow.script_id}},\n     `start_time`={{Table1.updatedRow.start_time}},\n     `end_time`={{Table1.updatedRow.end_time}},\n     `minute_add`={{Table1.updatedRow.minute_add}},\n     `minute_sub`={{Table1.updatedRow.minute_sub}},\n     `read_dbname`={{Table1.updatedRow.read_dbname}},\n     `write_dbname` ={{Table1.updatedRow.write_dbname}},\n    `station_id` ={{Table1.updatedRow.station_id==='null'? null:Table1.updatedRow.station_id}}\n     where job_id ={{Table1.updatedRow.job_id}};",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -47,7 +47,7 @@
       "Table1.updatedRow.remark",
       "Table1.updatedRow.script_id",
       "Table1.updatedRow.start_time",
-      "Table1.updatedRow.station_id",
+      "Table1.updatedRow.station_id==='null'? null:Table1.updatedRow.station_id",
       "Table1.updatedRow.table_name",
       "Table1.updatedRow.tenant_id",
       "Table1.updatedRow.write_dbname"
