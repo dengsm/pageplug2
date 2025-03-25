@@ -1,5 +1,5 @@
 select
     count(1) as cnt ,
     job_result
-from nifi_datasync_log  t where job_time>= date_format(now()-interval 7 day,'%Y-%m-%d')
+from nifi_datasync_log  t where job_time>= date_format(now()-interval 1 day,'%Y-%m-%d')
 group by t.job_result;

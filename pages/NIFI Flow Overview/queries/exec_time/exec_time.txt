@@ -1,5 +1,5 @@
 select table_name as table_name,
        max(exec_time) as exec_time
 from nifi_datasync_log t where exec_time>1000 
-and job_time >=date_format(now()-interval 10 day,'%Y-%m-%d') 
+and job_time >=date_format(now()-interval 7 day,'%Y-%m-%d') 
 group by table_name   limit 10;

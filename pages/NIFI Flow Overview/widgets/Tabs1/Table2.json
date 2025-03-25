@@ -93,7 +93,7 @@
         "datagrid",
         "table"
     ],
-    "bottomRow": 47,
+    "bottomRow": 65,
     "columnWidthMap": {
         "tenant_id": 110,
         "start_time": 155,
