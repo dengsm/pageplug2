@@ -87,7 +87,7 @@
         "datagrid",
         "table"
     ],
-    "bottomRow": 52,
+    "bottomRow": 88,
     "columnWidthMap": {
         "insert_script": 129,
         "update_script": 140,

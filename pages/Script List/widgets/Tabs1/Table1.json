@@ -138,7 +138,7 @@
         "datagrid",
         "table"
     ],
-    "bottomRow": 51,
+    "bottomRow": 84,
     "columnWidthMap": {
         "tenant_id": 181,
         "EditActions1": 111,
