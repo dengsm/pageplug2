@@ -79,7 +79,7 @@
         {"key": "primaryColumns.bind_stations.textSize"}
     ],
     "displayName": "Table",
-    "bottomRow": 55,
+    "bottomRow": 76,
     "parentRowSpace": 10,
     "defaultSelectedRow": "0",
     "hideCard": false,

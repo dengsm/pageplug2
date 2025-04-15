@@ -87,12 +87,12 @@
         "datagrid",
         "table"
     ],
-    "bottomRow": 88,
+    "bottomRow": 84,
     "columnWidthMap": {
         "insert_script": 129,
-        "update_script": 140,
-        "delete_script": 174,
-        "script_id": 76,
+        "update_script": 136,
+        "delete_script": 248,
+        "script_id": 94,
         "customColumn1": 148.20751953125,
         "customColumn2": 60,
         "script_name": 151

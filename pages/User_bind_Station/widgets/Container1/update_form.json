@@ -134,7 +134,7 @@
     "iconSVG": "/static/media/icon.6bacf7df.svg",
     "onSubmit": "{{UpdateQuery.run(() => SelectQuery.run(), (error) => showAlert(`Error while updating resource!\\n ${error}`,'error'))}}",
     "topRow": 4,
-    "bottomRow": 55,
+    "bottomRow": 75,
     "fieldLimitExceeded": false,
     "parentRowSpace": 10,
     "title": "Update Row ",
