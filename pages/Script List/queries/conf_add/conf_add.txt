@@ -1,7 +1,7 @@
 insert into nifi_datasync_config
     (`job_group`, `job_status`, `job_enable`, `table_name`, `describes`,
      `remark`, `tenant_id`, `script_id`, `start_time`, `end_time`, `minute_add`, 
-     `minute_sub`, `read_dbname`, `write_dbname`,`station_id`)
+     `minute_sub`, `read_dbname`, `write_dbname`,`station_id`,`table_unique_key`)
 values (  {{Table1.newRow.job_group}},
            {{Table1.newRow.job_status}},
            {{Table1.newRow.job_enable}},
@@ -16,5 +16,6 @@ values (  {{Table1.newRow.job_group}},
            {{Table1.newRow.minute_sub}},
            {{Table1.newRow.read_dbname}},
            {{Table1.newRow.write_dbname}},
-				 {{Table1.newRow.station_id}}
+				 {{Table1.newRow.station_id}},
+				 {{Table1.newRow.table_unique_key}}
        );

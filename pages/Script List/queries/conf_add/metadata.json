@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "insert into nifi_datasync_config\n    (`job_group`, `job_status`, `job_enable`, `table_name`, `describes`,\n     `remark`, `tenant_id`, `script_id`, `start_time`, `end_time`, `minute_add`, \n     `minute_sub`, `read_dbname`, `write_dbname`,`station_id`)\nvalues (  {{Table1.newRow.job_group}},\n           {{Table1.newRow.job_status}},\n           {{Table1.newRow.job_enable}},\n           {{Table1.newRow.table_name}},\n           {{Table1.newRow.describes}},\n           {{Table1.newRow.remark}},\n           {{Table1.newRow.tenant_id}},\n           {{Table1.newRow.script_id}},\n           {{Table1.newRow.start_time}},\n           {{Table1.newRow.end_time}},\n           {{Table1.newRow.minute_add}},\n           {{Table1.newRow.minute_sub}},\n           {{Table1.newRow.read_dbname}},\n           {{Table1.newRow.write_dbname}},\n\t\t\t\t {{Table1.newRow.station_id}}\n       );",
+      "body": "insert into nifi_datasync_config\n    (`job_group`, `job_status`, `job_enable`, `table_name`, `describes`,\n     `remark`, `tenant_id`, `script_id`, `start_time`, `end_time`, `minute_add`, \n     `minute_sub`, `read_dbname`, `write_dbname`,`station_id`,`table_unique_key`)\nvalues (  {{Table1.newRow.job_group}},\n           {{Table1.newRow.job_status}},\n           {{Table1.newRow.job_enable}},\n           {{Table1.newRow.table_name}},\n           {{Table1.newRow.describes}},\n           {{Table1.newRow.remark}},\n           {{Table1.newRow.tenant_id}},\n           {{Table1.newRow.script_id}},\n           {{Table1.newRow.start_time}},\n           {{Table1.newRow.end_time}},\n           {{Table1.newRow.minute_add}},\n           {{Table1.newRow.minute_sub}},\n           {{Table1.newRow.read_dbname}},\n           {{Table1.newRow.write_dbname}},\n\t\t\t\t {{Table1.newRow.station_id}},\n\t\t\t\t {{Table1.newRow.table_unique_key}}\n       );",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -49,6 +49,7 @@
       "Table1.newRow.start_time",
       "Table1.newRow.station_id",
       "Table1.newRow.table_name",
+      "Table1.newRow.table_unique_key",
       "Table1.newRow.tenant_id",
       "Table1.newRow.write_dbname"
     ],
