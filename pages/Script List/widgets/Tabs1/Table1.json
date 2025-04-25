@@ -156,7 +156,7 @@
         "job_status": 128,
         "start_time": 146,
         "job_id": 76,
-        "table_unique_key": 171,
+        "table_unique_key": 179,
         "write_dbname": 162
     },
     "parentRowSpace": 10,
@@ -744,7 +744,7 @@
             "index": 4,
             "isDiscardVisible": true,
             "isVisible": true,
-            "label": "table_unique_key",
+            "label": "unique_key",
             "fontStyle": "",
             "textColor": "[\n  \"\",\n  \"\",\n  \"\",\n  \"\",\n  \"\",\n  \"\",\n  \"\",\n  \"\",\n  \"\",\n  \"\",\n  \"\",\n  \"\",\n  \"\",\n  \"\",\n  \"\",\n  \"\",\n  \"\",\n  \"\",\n  \"\",\n  \"\",\n  \"\",\n  \"\",\n  \"\",\n  \"\",\n  \"\",\n  \"\",\n  \"\",\n  \"\",\n  \"\",\n  \"#929292\",\n  \"#929292\",\n  \"#929292\",\n  \"#929292\",\n  \"#929292\",\n  \"#929292\",\n  \"#929292\",\n  \"#929292\"\n]",
             "columnType": "text",
